@@ -1,0 +1,301 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .first-div{
+        width: 100%;
+        height: 80vh;
+        background-position: center;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .main-img{
+        width: 70%;
+        height: auto;
+    }
+
+    .sfondo-tit{
+        position: relative;
+        background: rgba(135,206,235,0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        will-change: transform;
+    }
+
+    .sfondo2-tit{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        will-change: transform;
+        z-index: 2;
+    }
+
+
+    .slide{
+        width:107%;
+        height: auto;
+        will-change: tranform;
+        height: 120vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+    }
+
+    .slide-cont{
+        width: 107%;
+        will-change: tranform;
+        height: 120vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+    }
+
+    /* slide2 container: positioned absolutely inside .cont-gr and acts as background */
+    .slide2-cont{
+        position: absolute;
+        inset: 0; /* top:0; right:0; bottom:0; left:0; */
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        will-change: transform;
+        z-index: 0;
+    }
+
+
+    .slide.des{
+        animation: end 6s ease-in-out forwards, move-x-des 6s ease-in-out forwards;
+        visibility: visible;
+        will-change: tranform;
+    }
+
+    .slide.desMain {
+        animation: end-main 6s ease-in-out forwards, move-x-des 6s ease-in-out forwards;
+        visibility: visible;
+        will-change: tranform;
+    }
+
+    .slide2.desMain2 {
+        animation: end-main 6s ease-in-out forwards;
+        visibility: visible;
+        will-change: tranform;
+    }
+
+    .slide.sin {
+        animation: end 6s ease-in-out forwards, move-x-sin 6s ease-in-out forwards;
+        visibility: visible;
+        will-change: tranform;
+    }
+
+    @@keyframes end{
+        0%{
+            opacity: 0;
+        }
+
+        20%{
+            opacity: 1;
+        }
+
+        80%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @@keyframes end-main {
+        0% {
+            opacity: 1;
+        }
+
+        80% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @@keyframes move-x-des{
+        0% {
+            transform: translateX(0%)
+        }
+        100% {
+            transform: translateX(2.5%)
+        }
+    }
+
+    @@keyframes move-x-sin {
+        0% {
+            transform: translateX(2.5%)
+        }
+
+        100% {
+            transform: translateX(-2.5%)
+        }
+    }
+
+    .arrow{
+        animation: upDown 3s infinite
+    }
+
+    @@keyframes upDown{
+        0%{
+            transform: translateY(0px);
+            opacity: 0;
+        }
+
+        50%{
+            transform: translateY(8px);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(16px);
+            opacity: 0;
+        }
+    }
+
+    .cont-g{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .cont-gr:nth-child(1), .cont-gr:nth-child(4) {
+        transform: rotate(-1deg) scale(0.9)
+    }
+
+    .cont-gr:nth-child(3), .cont-gr:nth-child(6) {
+        transform: rotate(1deg) scale(0.9)
+    }
+
+    .cont-gr{
+        width: 85%;
+        overflow: hidden;
+        position: relative;
+        transition: 0.7s ease-in-out;
+    }
+
+    .cont-gr:nth-child(1), .cont-gr:nth-child(2), .cont-gr:nth-child(3){
+        border: 1px solid rgba(0,0,0,0.2);
+        border-radius: 10px;
+        background: rgba(135,206,235,0.6);
+        height: 300px;
+    }
+
+    .cont-gr:nth-child(4), .cont-gr:nth-child(5), .cont-gr:nth-child(6){
+        height: 200px;
+    }
+
+    .cont-gr:nth-child(1):hover {
+        transform: rotate(-1deg) scale(0.92);
+        transition: 0.7s ease-in-out;
+        cursor: pointer;
+    }
+
+    .cont-gr:nth-child(2):hover {
+        transform: scale(1.02);
+        transition: 0.7s ease-in-out;
+        cursor: pointer;
+    }
+
+    .cont-gr:nth-child(3):hover {
+        transform: rotate(1deg) scale(0.92);
+        transition: 0.7s ease-in-out;
+        cursor: pointer;
+    }
+
+    .slide2{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+        visibility: hidden;
+    }
+
+    .slide2.active{
+        opacity: 1;
+        z-index: -1;
+        visibility: visible;
+        animation: end 6s ease-in-out forwards;
+    }
+
+    .desc-div > h3{
+        line-height: 40px;
+        font-weight: 400;
+    }
+
+    
+</style>
+
+<div class="first-div">
+    <div class="sfondo-tit">
+        <img class="main-img" src="logos\easy_repair_logo.png"/>
+        
+    </div>
+    <div class="slide-cont">
+        <img class="slide" src="imgs/pexels-fotografia-lui-vlad-1445510816-31862950.jpg" />
+        <img class="slide" src="imgs/pexels-kieutruongphoto-15554492.jpg" />
+        <img class="slide" src="imgs/pexels-fotografia-lui-vlad-1445510816-31945005.jpg" />
+        <img class="slide" src="imgs/pexels-tima-miroshnichenko-6755136.jpg" />
+    </div>
+    
+</div>
+
+<div class="second-div mt-4 w-100 h-auto">
+    <h1 class="card-title text-center display-3 fw-normal">Let’s get things done!</h1>
+</div>
+
+<div class="arrow scroll-down mt-1 fw-normal" id="scrollDown" role="button" aria-label="Scroll down"> <svg width="70" height="70" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M6 9l6 6 6-6" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></div>
+
+<div class="desc-div w-100 h-auto text-center mt-5 mb-4">
+    <h3 class="ms-5 me-5">Easy Repair is your one-stop platform for everything your phone needs. Whether you're looking for a new device, the right spare part to fix your own, or expert guidance on a problem, you'll find it all in one place.</h3>
+</div>
+
+<div class="d-grid cont-g mt-5 mb-5 row-gap-5">
+    <div class="container-md cont-gr object-fit-cover object-fit-cover">  </div>
+    <div class="container-md cont-gr object-fit-cover object-fit-cover">
+        <div class="sfondo2-tit">
+            <img class="w-100 h-auto" src="~/logos/teknik_logo.png" />
+        </div>
+
+        <div class="slide2-cont">
+            <img class="w-100 h-auto slide2" src="~/imgs/pexels-steve-12634599.jpg" />
+            <img class="w-100 h-auto slide2" src="~/imgs/pexels-steve-12939554.jpg" />
+            <img class="w-100 h-auto slide2" src="~/imgs/pexels-steve-13729933.jpg" />
+            <img class="w-100 h-auto slide2" src="~/imgs/pexels-steve-29525883.jpg" />
+        </div>
+        
+    </div>
+    <div class="container-md cont-gr object-fit-cover"></div>
+
+    <div class="container-md cont-gr object-fit-cover"></div>
+    <div class="container-md cont-gr object-fit-cover"><p class="fw-normal fs-5 text-center">TekNik is the AI assistant of Easy Repair. Describe your device's issue in a quick chat, and TekNik will collect the key details, suggest possible causes, and prepare a summary for our technicians, so your repair gets started faster!</p></div>
+    <div class="container-md cont-gr object-fit-cover"></div>
+</div>
+
+@section Scripts{
+    <script src="~/js/Slider.js" defer></script>
+}
