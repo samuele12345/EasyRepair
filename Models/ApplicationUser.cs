@@ -4,7 +4,7 @@ namespace EasyRepair.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        public string? FirtName { get; set; }
+        public string? FirstName { get; set; }
         public string? LastName { get; set; }
     }
 }
