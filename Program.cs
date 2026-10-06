@@ -2,6 +2,7 @@ using EasyRepair.Data;
 using EasyRepair.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +16,7 @@ builder.Configuration.AddJsonFile("appsettings.Local.Json", optional: true, relo
 
 builder.Services.AddDbContext<EasyRepairContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
-
+ 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(option =>
 {
     option.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
