@@ -6,7 +6,7 @@ namespace EasyRepair.ViewModels
     {
         [Required(ErrorMessage = "Email is required!")]
         [EmailAddress(ErrorMessage = "Wrong email format!")]
-        [RegularExpression(@"^[a-zA-Z]+(?:[-._][a-zA-Z0-9]+)@[a-zA-Z]+(?:[-._][a-zA-Z0-9]+).[a-zA-Z]{2,}$", ErrorMessage = "Only . and - are permitted as special characters!")]
+        [RegularExpression(@"^[a-zA-Z]+(?:[a-zA-Z0-9]+)@[a-zA-Z]+(?:[a-zA-Z0-9]+).[a-zA-Z]{2,}$", ErrorMessage = "Invalid email!")]
         public string? Email { set; get; }
 
         [Required(ErrorMessage = "Name is required!")]
@@ -14,11 +14,11 @@ namespace EasyRepair.ViewModels
         public string? Name { get; set; }
 
         [Required(ErrorMessage = "Surname is required!")]
-        [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Surname musto contain only letters")]
+        [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Surname must contain only letters")]
         public string? Surname { get; set; }
 
         [Required(ErrorMessage = "Address is Required!")]
-        [RegularExpression(@"^[a-zA-Z0-9]+$", ErrorMessage = "Address Must contain numbers and letters only!")]
+        [RegularExpression(@"^[a-zA-Z0-9\s]+$", ErrorMessage = "Address Must contain numbers and letters only!")]
         public string? Address { set; get; }
 
         [Required(ErrorMessage = "Password is required!")]

@@ -10,17 +10,76 @@
     .main-cont{
         width: 100%;
         height: 100vh;
+        overflow: hidden;
+    }
+
+    .div-but{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cont-form{
+        width: 100%;
+    }
+
+    form{
+        width:60%;
     }
 </style>
 
 <div class="main-cont d-flex flex-row align-items-center justify-content-center">
-    <div class="w-80 h-auto">
-        <form asp-controller="Account" asp-action="Register">
-            <span class="text-danger"></span>
-            <label asp-for="Name"></label>
-            <input type="text" name="Name"/>
-        </form>
-    </div>
+    <form asp-controller="Account" asp-action="Registration" method="post">
+        <section class="form-cont">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email:</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name:</label>
+                <input asp-for="Name" class="form-control"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Surname" class="form-label">Surname:</label>
+                <input asp-for="Surname" class="form-control"/>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Address" class="form-label">Address:</label>
+                <input asp-for="Address" class="form-control"/>
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Password:</label>
+                <input asp-for="Password" class="form-control"/>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="RepeatPassword" class="form-label">Repeat Password:</label>
+                <input asp-for="RepeatPassword" class="form-control"/>
+                <span asp-validation-for="RepeatPassword" class="text-danger"></span>
+            </div>
+
+            <div class="div-but">
+                <div>
+                    <input type="submit" value="Registration"/>
+                </div>
+                <div>
+                    <a asp-controller="Account" asp-action="Login" class="btn">Login</a>
+                </div>
+            </div>
+        </section>
+    </form>
 </div>
 
 @section Scripts{

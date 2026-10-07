@@ -1,5 +1,42 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using EasyRepair.ViewModels;
+@model LoginViewModel;
+
 @{
+    ViewData["Title"] = "Login";
+    Layout = "_AccountLayout";
+}
+
+<style>
+    .main-div{
+        heigth: 100vh;
+    }
+</style>
+
+<div class="main-div w-100 d-flex flex-row justify-content-center align-items-center">
+    <form asp-controller="Account" asp-action="Login" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">Email:</label>
+            <input asp-for="Email" class="form-control"/>
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label">Password:</label>
+            <input asp-for="Password" class="form-control"/>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="w-100 d-flex align-items-center justify-content-between">
+            <input type="submit" value="Login" class="btn"/>
+            <a asp-controller="Account" asp-action="Registration" class="btn">Register</a>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial.cshtml");
+    }
 }

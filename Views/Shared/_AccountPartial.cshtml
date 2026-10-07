@@ -11,9 +11,9 @@
 <ul class="d-flex ms-auto">
     @if (SignInManager.IsSignedIn(User))
     {
-        <li class="nav-item">
+        <li>
             <form asp-controller="Account" asp-action="Logout" style="dispaly:inline">
-                <button type="submit" style="border: none; padding: 5rem 5rem; background: transparent" class="nav-link">Logout</button>
+                <button type="submit" style="border: none; padding: 0.5rem 0.5rem; background: transparent" class="nav-link">Logout</button>
             </form>
         </li>
     }
