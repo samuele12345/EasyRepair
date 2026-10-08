@@ -81,7 +81,9 @@ namespace EasyRepair.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
+                var nEmail = model.Email.Trim().ToLower();
+
+                var result = await _signInManager.PasswordSignInAsync(nEmail, model.Password, false, false);
 
                 if (result.Succeeded)
                 {

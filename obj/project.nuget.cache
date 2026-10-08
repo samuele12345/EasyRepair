@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+T8XAF9h7/I=",
+  "dgSpecHash": "ziGIH/cnFNQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\samue\\OneDrive\\Desktop\\Linguaggi e Progetti\\C#\\esercizi\\EsLINQ\\SimulazioneDB\\Simulazione1\\EasyRepair\\EasyRepair.csproj",
+  "projectFilePath": "C:\\Users\\samue\\OneDrive\\Desktop\\Linguaggi e Progetti\\CSharp\\esercizi\\EsLINQ\\SimulazioneDB\\Simulazione1\\EasyRepair\\EasyRepair.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samue\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
