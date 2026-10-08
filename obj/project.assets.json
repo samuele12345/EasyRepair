@@ -3377,11 +3377,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samue\\OneDrive\\Desktop\\Linguaggi e Progetti\\C#\\esercizi\\EsLINQ\\SimulazioneDB\\Simulazione1\\EasyRepair\\EasyRepair.csproj",
+      "projectUniqueName": "C:\\Users\\samue\\OneDrive\\Desktop\\Linguaggi e Progetti\\CSharp\\esercizi\\EsLINQ\\SimulazioneDB\\Simulazione1\\EasyRepair\\EasyRepair.csproj",
       "projectName": "EasyRepair",
-      "projectPath": "C:\\Users\\samue\\OneDrive\\Desktop\\Linguaggi e Progetti\\C#\\esercizi\\EsLINQ\\SimulazioneDB\\Simulazione1\\EasyRepair\\EasyRepair.csproj",
+      "projectPath": "C:\\Users\\samue\\OneDrive\\Desktop\\Linguaggi e Progetti\\CSharp\\esercizi\\EsLINQ\\SimulazioneDB\\Simulazione1\\EasyRepair\\EasyRepair.csproj",
       "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samue\\OneDrive\\Desktop\\Linguaggi e Progetti\\C#\\esercizi\\EsLINQ\\SimulazioneDB\\Simulazione1\\EasyRepair\\obj\\",
+      "outputPath": "C:\\Users\\samue\\OneDrive\\Desktop\\Linguaggi e Progetti\\CSharp\\esercizi\\EsLINQ\\SimulazioneDB\\Simulazione1\\EasyRepair\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

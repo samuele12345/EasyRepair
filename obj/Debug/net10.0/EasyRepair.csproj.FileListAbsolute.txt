@@ -162,7 +162,6 @@ C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\Simulazi
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\d398roh8tm-{0}-gaibd5a3io-gaibd5a3io.gz
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\t3khisctq6-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\28txjzawqt-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
-C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\ebhgfgrtdb-{0}-zkkl5juf0s-zkkl5juf0s.gz
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\a0ed3luv6g-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\mc9ndp5g5a-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\kp65pfknuo-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -300,3 +299,4 @@ C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\Simulazi
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\v0zgfp0y55-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\yfc7ypekbg-{0}-mlv21k5csn-mlv21k5csn.gz
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\C#\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\ebhgfgrtdb-{0}-n1id3m8o9w-n1id3m8o9w.gz
