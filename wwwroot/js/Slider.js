@@ -4,6 +4,7 @@ const butAr = document.querySelector(".scroll-down");
 const slides1 = document.querySelectorAll(".slide1");
 const slides2 = document.querySelectorAll(".slide2");
 const slides3 = document.querySelectorAll(".slide3");
+const redDivs = document.querySelectorAll(".cont-gr");
 
 if (slides.length > 0){
     let slideIndex = 0;
@@ -86,5 +87,12 @@ if (butAr) {
     console.log(window.pageYOffset)
     butAr.addEventListener("click", () => {
         butAr.scrollIntoView({ behavior: 'smooth' });
+    })
+}
+
+if (redDivs.length > 0) {
+    redDivs[0].addEventListener("click", () => {
+        window.location.href = "./ClientApp/src/App.jsx";
+        console.log(yes);
     })
 }
