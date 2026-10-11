@@ -114,6 +114,29 @@ namespace EasyRepair.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Items");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
+                            Name = "Samsung S23",
+                            Price = 280m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
+                            Name = "Samsung S22",
+                            Price = 215m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
+                            Name = "Samsung S21",
+                            Price = 170m
+                        });
                 });
 
             modelBuilder.Entity("EasyRepair.Models.Order", b =>
@@ -154,6 +177,9 @@ namespace EasyRepair.Migrations
 
                     b.Property<decimal>("PriceSnapshot")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

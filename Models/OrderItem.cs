@@ -13,6 +13,7 @@ namespace EasyRepair.Models
         [ForeignKey("OrderId")]
         public int OrderId { get; set; }
         public Order? Order { get; set; }
+        public int Quantity { get; set; }
 
         public decimal PriceSnapshot { get; set; }
     }

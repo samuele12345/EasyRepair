@@ -11,7 +11,7 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': { // utilizzando /api nelle nelle api request, queste vengono inviate direttamente al backend
-                target: 'https://localhost:7099', // indirizzo server backend
+                target: 'http://localhost:5226', // indirizzo server backend
                 secure: false
             }
         }
