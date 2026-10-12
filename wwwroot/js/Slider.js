@@ -92,7 +92,6 @@ if (butAr) {
 
 if (redDivs.length > 0) {
     redDivs[0].addEventListener("click", () => {
-        window.location.href = "./ClientApp/src/App.jsx";
-        console.log(yes);
+        window.location.href = "Item/Device"
     })
 }

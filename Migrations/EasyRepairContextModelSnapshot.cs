@@ -102,7 +102,6 @@ namespace EasyRepair.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -110,6 +109,9 @@ namespace EasyRepair.Migrations
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Tipo")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -121,21 +123,24 @@ namespace EasyRepair.Migrations
                             Id = 1,
                             Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
                             Name = "Samsung S23",
-                            Price = 280m
+                            Price = 280m,
+                            Tipo = 0
                         },
                         new
                         {
                             Id = 2,
                             Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
                             Name = "Samsung S22",
-                            Price = 215m
+                            Price = 215m,
+                            Tipo = 0
                         },
                         new
                         {
                             Id = 3,
                             Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
-                            Name = "Samsung S21",
-                            Price = 170m
+                            Name = "Batteria s23",
+                            Price = 170m,
+                            Tipo = 1
                         });
                 });
 

@@ -603,5 +603,5 @@ C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\Simu
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\EasyRepair.pdb
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\EasyRepair.genruntimeconfig.cache
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\ref\EasyRepair.dll
-C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\ebhgfgrtdb-{0}-nwzrqqgiht-nwzrqqgiht.gz
-C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\42goc49eos-{0}-3r8b2a0bt1-3r8b2a0bt1.gz
+C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\ebhgfgrtdb-{0}-wbsetfc3zc-wbsetfc3zc.gz
+C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\obj\Debug\net10.0\compressed\42goc49eos-{0}-l9tc16nc38-l9tc16nc38.gz

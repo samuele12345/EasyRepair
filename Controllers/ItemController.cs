@@ -1,6 +1,10 @@
-﻿using EasyRepair.Data;
+﻿using AspNetCoreGeneratedDocument;
+using EasyRepair.Data;
+using EasyRepair.Migrations;
+using EasyRepair.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client.NativeInterop;
 using System.Security.Claims;
 
 //namespace EasyRepair.Controllers.Api;
@@ -22,15 +26,44 @@ public class ItemController : Controller //Base
     }
 
     [HttpGet]
-    public async Task<IActionResult> UtentiProva()
+    public async Task<IActionResult> ItemsDev(string inputVal, int itType)
     {
-        var cartItems = await _context.Items.Select(it => new
-            {
-                it.Name,
-                it.Price
-            }).ToListAsync();
+        try
+        {
+            var type = ItemType.Device;
 
-        return Json(cartItems);
+            if(itType == 0)
+            {
+                type = ItemType.Device;
+            }
+            else
+            {
+                type = ItemType.SparePart;
+            }
+
+            var query = _context.Items.Where(it => it.Tipo == type).AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(inputVal))
+            {
+                if(itType == 0)
+                {
+                    query = query.Where(it => it.Name.Contains(inputVal));
+                    Console.WriteLine(query);
+                }
+                else if(itType == 1)
+                {
+                    query = query.Where(it => it.Name.Contains(inputVal));
+                    Console.WriteLine(query);
+                }
+            }
+
+            return Json(await query.ToListAsync());
+        }
+        catch(Exception er)
+        {
+            Console.WriteLine(er);
+        }
+        return View();
     }
 
     /*

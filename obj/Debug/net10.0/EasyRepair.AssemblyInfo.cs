@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EasyRepair")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86407f627451b72fe46196a16dc17667a46ab275")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f90eaa1778a5be6e7dc03f5ddfa845e7e08b4655")]
 [assembly: System.Reflection.AssemblyProductAttribute("EasyRepair")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EasyRepair")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

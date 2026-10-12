@@ -37,7 +37,8 @@ namespace EasyRepair.Data
                     Id = 1,
                     Name = "Samsung S23",
                     Price = 280m,
-                    Image = "/imgs/pexels-rubaitulazad-16149966.jpg"
+                    Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
+                    Tipo = ItemType.Device
                 },
 
                 new Item
@@ -45,15 +46,17 @@ namespace EasyRepair.Data
                     Id = 2,
                     Name = "Samsung S22",
                     Price = 215m,
-                    Image = "/imgs/pexels-rubaitulazad-16149966.jpg"
+                    Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
+                    Tipo = ItemType.Device
                 },
 
                 new Item
                 {
                     Id = 3,
-                    Name = "Samsung S21",
+                    Name = "Batteria s23",
                     Price = 170m,
-                    Image = "/imgs/pexels-rubaitulazad-16149966.jpg"
+                    Image = "/imgs/pexels-rubaitulazad-16149966.jpg",
+                    Tipo = ItemType.SparePart
                 }
             );
         }
