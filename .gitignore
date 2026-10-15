@@ -4,6 +4,7 @@
 
 # File di configurazione locali e credenziali
 appsettings.Local.json
+appsettings.json
 appsettings.Development.json
 **/appsettings.Local.json
 **/appsettings.Development.json
