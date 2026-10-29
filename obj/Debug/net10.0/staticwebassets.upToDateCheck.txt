@@ -3,6 +3,7 @@ wwwroot\favicon.ico
 wwwroot\imgs\pexels-fotografia-lui-vlad-1445510816-31862950.jpg
 wwwroot\imgs\pexels-fotografia-lui-vlad-1445510816-31945005.jpg
 wwwroot\imgs\pexels-kieutruongphoto-15554492.jpg
+wwwroot\imgs\pexels-rubaitulazad-16149966.jpg
 wwwroot\imgs\pexels-steve-12634599.jpg
 wwwroot\imgs\pexels-steve-12939554.jpg
 wwwroot\imgs\pexels-steve-13729933.jpg
@@ -16,6 +17,7 @@ wwwroot\imgs\repair1.jpg
 wwwroot\imgs\repair2.jpg
 wwwroot\imgs\repair3.jpg
 wwwroot\imgs\repair4.jpg
+wwwroot\js\Device.js
 wwwroot\js\site.js
 wwwroot\js\Slider.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -84,8 +86,6 @@ wwwroot\logos\easy_repair_logo_trasparente.png
 wwwroot\logos\smart_device_text_logo.png
 wwwroot\logos\teknik_logo.png
 wwwroot\logos\your_component_text_logo.png
-wwwroot\js\Device.js
-wwwroot\imgs\pexels-rubaitulazad-16149966.jpg
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\wwwroot\css\site.css
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\wwwroot\js\site.js
 C:\Users\samue\OneDrive\Desktop\Linguaggi e Progetti\CSharp\esercizi\EsLINQ\SimulazioneDB\Simulazione1\EasyRepair\wwwroot\favicon.ico
